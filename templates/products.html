@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang = "en">
+<head>
+	<meta charset="UTF-8">
+	<title>All Products-Recommendation System</title>
+	<link rel="stylesheet" href="{{url_for('static',filename='css/file2.css')}}">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+	<div class="header">
+
+		<div class = "container">
+			<div class = "navbar">
+				<div class= "logo">
+					<img src="/static/images/image1.png" width = "200px">
+				</div>
+				<nav>
+					<ul>
+						<li><a href="{{url_for('index')}}">Home</a></li>
+						<li><a href="{{url_for('products')}}">Products</a></li>
+						<li><a href="{{url_for('contact')}}">Contact</a></li>
+						<li><a href="{{url_for('login')}}">Account</a></li>
+					</ul>
+				</nav>
+				<img src="/static/images/image2.jpg" width="30px" height="30px">
+			</div>	
+		</div>
+	</div> 	
+	<div class="small-container">
+		<div class="row row-2">
+			<h2>Products</h2>
+			<select>
+				<option>Default Sorting</option>
+				<option>Sort by Price</option>
+				<option>Sort by Popularity</option>
+				<option>Sort by Rating</option>
+				<option>Sort by Sale</option>
+			</select>
+		</div>
+		<div class="row">
+			<div class="col-4">
+				<img src="/static/images/image7.jpg">
+				<h4>Plain Black Shirt</h4>
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star-o"></i>
+				<p>Rs500</p>				
+			</div>
+			<div class="col-4">
+				<img src="/static/images/image8.jpg">
+				<h4>Plain Red Shirt</h4>
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star-half-o"></i>
+				<i class="fa fa-star-o"></i>
+				<p>Rs700</p>				
+			</div>
+			<div class="col-4">
+				<li><img src="/static/images/image9.jpg"></li>
+				<h4>Yellow Hoodie</h4>
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star"></i>
+				<p>Rs1000</p>				
+			</div>
+			<div class="col-4">
+				<img src="/static/images/image10.jpg">
+				<h4>White Shirt</h4>
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star-o"></i>
+				<i class="fa fa-star-o"></i>
+				<p>Rs400</p>				
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-4">
+				<img src="/static/images/image11.jpg">
+				<h4>Shoes</h4>
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star-o"></i>
+				<p>Rs5000</p>				
+			</div>
+			<div class="col-4">
+				<img src="/static/images/image12.png">
+				<h4>Samsung UHD TV</h4>
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star-half-o"></i>
+				<i class="fa fa-star-o"></i>
+				<p>Rs70000</p>				
+			</div>
+			<div class="col-4">
+				<img src="/static/images/image13.jpg">
+				<h4>Watch</h4>
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star"></i>
+				<p>Rs2500</p>				
+			</div>
+			<div class="col-4">
+				<img src="/static/images/image14.png">
+				<h4>Traditional Dress</h4>
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star"></i>
+				<p>Rs7000</p>				
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-4">
+				<img src="/static/images/image15.jpg">
+				<h4>Tuxedo</h4>
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star-o"></i>
+				<p>Rs11000</p>				
+			</div>
+			<div class="col-4">
+				<img src="/static/images/image16.jpg">
+				<h4>ACER Laptop</h4>
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star"></i>
+				<p>Rs100000</p>				
+			</div>
+			<div class="col-4">
+				<img src="/static/images/image17.jpg">
+				<h4>Kurta</h4>
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star"></i>
+				<p>Rs999</p>				
+			</div>
+			<div class="col-4">
+				<img src="/static/images/image18.jpg">
+				<h4>Bedsheet</h4>
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star-o"></i>
+				<p>Rs1450</p>				
+			</div>
+		</div>
+		<div class="page-button">
+			<span>1</span>
+			<span>2</span>
+			<span>3</span>
+			<span>4</span>
+			<span>&#8594;</span>
+		</div>	
+	</div>
+<!-------footer-------->
+	<div class="footer">
+		<div class="container">
+			<div class="row">
+				<div class="footer-col-1">
+					<img src="/static/images/image20.png">
+					<h3>Download Our App</h3>
+					<p>Download App for Android and Ios mobile phones.</p>
+					<div class="app-logo">
+						<img src="/static/images/image21.png">
+					</div>
+			</div>
+		</div>
+	</div>
+	
+</body>
+</html>	

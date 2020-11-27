@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang = "en">
+<head>
+	<meta charset="UTF-8">
+	<title>Recommendation System</title>
+	<link rel="stylesheet" href="{{url_for('static',filename='css/file2.css')}}">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+	<div class="header">
+
+		<div class = "container">
+			<div class = "navbar">
+				<div class= "logo">
+					<img src="/static/images/image1.png" width = "200px">
+				</div>
+				<nav>
+					<ul>
+						<li><a href="{{url_for('index')}}">Home</a></li>
+						<!-- <li><a href="{{url_for('products')}}">Products</a></li> -->
+						<!-- <li><a href="{{url_for('contact')}}">Contact</a></li> -->
+						<li><a href="{{url_for('login')}}">Account</a></li>
+					</ul>
+				</nav>
+				<img src="/static/images/image2.jpg" width="30px" height="30px">
+			</div>
+		
+			<div class="row">
+				<div class="col-2">
+					<h1>You Can Always,<br>"Go For A Change!"</h1>
+					<br>
+					<p>Want a recommendation from the experts?<br>
+					<p><b>YOU CAN CHECK OUR PRODUCTS PAGE</b></p>
+					<a href="" class="button">EXPLORE</a>
+				</div>
+				<div class="col-2">
+					<img src="static/images/image3.jpg" width="700px" height="600px">
+				</div>
+			</div>
+		</div>
+	</div> 
+<!---------featured products--------->
+
+{% block body %}
+	
+	<div class="small-container">
+		<h2 class="title">Featured products</h2>
+
+		<div class="row">
+			{% for product in datasend %}
+			<div class="col-4">
+				<img src="/static/images/{{product.ProductImage}}">
+				<h4>{{product.ProductName}}</h4>
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star-o"></i>
+				<p>{{product.ProductRate}}</p>
+				<a href="/productsDetail/{{product.ProductId}}"><button>Buy Now</button></a>			
+			</div>
+			{% endfor %}
+			{% endblock %}
+			
+			</div>
+		</div>
+	</div>
+<!-------footer-------->
+	<div class="footer">
+		<div class="container">
+			<div class="row">
+				<div class="footer-col-1">
+					<img src="/static/images/image20.png">
+					<h3>Download Our App</h3>
+					<p>Download App for Android and Ios mobile phones.</p>
+					<div class="app-logo">
+						<img src="static/images/image21.png">
+					</div>
+			</div>
+		</div>
+	</div> 
+	
+</body>
+</html>	
